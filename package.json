@@ -1,0 +1,36 @@
+{
+  "name": "react_chatapp",
+  "version": "1.0.0",
+  "description": "a chat app using chatkit ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryzlan/react_ChatApp.git"
+  },
+  "author": "ryzlan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryzlan/react_ChatApp/issues"
+  },
+  "homepage": "https://github.com/ryzlan/react_ChatApp#readme",
+  "dependencies": {
+    "@pusher/chatkit-client": "^1.5.0",
+    "@pusher/chatkit-server": "^1.1.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "pusher-chatkit-server": "^0.12.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "scripts": {
+    "start": "concurrently \"nodemon ./server.js\" \"react-scripts start\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:3001/"
+
+}
